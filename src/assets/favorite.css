@@ -1,0 +1,129 @@
+.name_page h1{
+    text-align: center;
+    /* background-color: red; */
+    font-size: 1.5rem;
+    color: black;
+    padding: 1rem;
+}
+.fav_board{
+    padding: .5rem;
+    width: 100%;
+    height: 30rem;
+    display: flex;
+    gap:.5rem;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+}
+.fav_board::-webkit-scrollbar {
+    display: none;
+}
+.fav_cart{
+    height: 11rem;
+    padding: .5rem ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: .1rem solid;
+    background-color: rgb(213, 211, 211);
+    border-radius: .5rem;
+}
+.fav_image{
+    height: 10rem;
+    margin-right: 1rem;
+
+}
+.fav_image img{
+    border-radius: 1.5rem 0 1.5rem 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.fav_detail{
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.fav_detail h2{
+    font-size: 2rem;
+    margin: 0;
+    color: rgb(126, 126, 126);
+}
+.fav_detail p{
+    font-size: 1rem;
+    margin: 0;
+}
+
+
+.fav_detail span{
+    color: red;
+    font-size: 2rem;
+    width: 20rem;
+}
+.button{
+    display: flex;
+    gap: .5rem;
+    flex-direction: column;
+}
+.not_add_cart{
+    display: flex;
+    justify-content: center;
+    height: 25rem;
+}
+.not_add_cart p{
+    font-size: 1.5rem;
+}
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+
+
+    .fav_cart {
+        width: 24rem;
+        margin: 0;
+        height: 6rem;
+        padding: .2rem;
+
+    }
+
+    .fav_detail {
+        width: 18rem;
+        margin: 0;
+    }
+    .fav_detail h2{
+        width: 8rem;
+        font-size: .8rem;
+        color: black;
+    }
+    .fav_detail span {
+        margin-right: 2rem;
+        font-size: .8rem;
+        font-weight: bold;
+    }
+    .fav_detail p{
+        font-size: .6rem;
+        margin: 0;
+    }
+    .fav_image{
+        margin-right: -1rem;
+        width: 10rem;
+        height: 100%;
+        padding: .2rem;
+        background-color: rgb(234, 205, 174);
+        border-radius: 1rem 0 1rem 0;
+    }
+    .fav_image img{
+        border-radius: 1rem 0 1rem 0;
+    }
+    .not_add_cart p{
+        font-size: 1rem;
+    }
+    .fav_board{
+        height: 25rem;
+    }
+    .button{
+        width: 4rem;
+        font-size: .7rem;
+    }
+
+}
