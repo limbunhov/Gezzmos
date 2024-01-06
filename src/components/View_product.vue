@@ -18,7 +18,7 @@
                         <p>{{ product.title.t7 }}</p>
                     </div>
                     <span>price: {{ product.price }}</span>
-                    <button @click="view_add_cart(product.id)" class="btn bg-primary view_btn"> Add to cart</button>
+                    <button @click="view_add_cart(product)" class="btn bg-primary view_btn"> Add to cart</button>
                 </div>
             </div>
         </div>
